@@ -37,15 +37,14 @@ CREATE POLICY "Users can delete their own notes"
   USING (auth.uid() = user_id);
 
 
--- curl -X POST https://ifmbbvneribptscoisjh.functions.supabase.co/post_notes \
---   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlmbWJidm5lcmlicHRzY29pc2poIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU5MTI2NjksImV4cCI6MjA2MTQ4ODY2OX0.TOJRuEZRv6lg7C3nkcKKGd8aEe6k5-VUBm2ILHhXFbo" \
+-- curl -X POST https://lfmbbvnenbptscojsjh.supabase.co/rest/v1/notes \
+--   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6ImpQRGNSV3B4RGhZdkZ2dUMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2lmbWJidm5lcmlicHRzY29pc2poLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJlNmMwNmZlMS01ZDk0LTQ4ZGItODA4Ni0wZGIwZDI5OTlmYjEiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQ1OTQ4MTExLCJpYXQiOjE3NDU5NDQ1MTEsImVtYWlsIjoic2hpdmFuaS5nb3N3YW1pMjEyMDA1QGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzQ1OTQ0NTExfV0sInNlc3Npb25faWQiOiJhZDZhMTJkMC01OGIyLTQ2OWItOTIyNS0xOTQxM2JjZjY0NzQiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.5v7Pnm_Qs6Eo2vB1W4DkJI4B5qRU5kH85m5NCRURCBI" \
 --   -H "Content-Type: application/json" \
 --   -d '{
---     "user_id": "1",
---     "title": "first todo",
---     "content": "just testing my project first time",
---     "tags": ["example", "note"]
---   }'
+--     user_id:"e6c06fe1-5d94-48db-8086-0db0d2999fb1",
+--     title:"first todo",
+--     content:"this is the first todo of this project"    
+-- }'
 
 
 
